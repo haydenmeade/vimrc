@@ -1,14 +1,21 @@
+"
+" Map the leader key to SPACE
+let mapleader=" "
 
-set hlsearch
+" Write with space-w
+nmap <Leader>w :w<CR>
+nmap <Leader>x :x<CR>
+nmap <Leader>q :q!<CR>
+
+map <Leader>p "+p
+map <Leader>P "+P
+map <Leader>y "+y
+map <Leader>d "+d
+
 set incsearch
+set hlsearch
+set vsvim_useeditordefaults
 
-let mapleader = " "
-
-nnoremap <Leader>w :w<CR>
-nnoremap <Leader>q :q<CR>
-nnoremap <Leader>x :x<CR>
-
-nnoremap <Leader>p "+p
-nnoremap <Leader>y "+y
-
-nnoremap <C-O> :vsc View.NavigateBackward<CR>
+nmap <Leader>e :vsc View.NextError<CR>
+nmap <C-O> :vsc View.NavigateBackward<CR>
+nmap <C-I> :vsc View.NavigateForward<CR>
