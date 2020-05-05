@@ -19,3 +19,6 @@ set vsvim_useeditordefaults
 nmap <Leader>e :vsc View.NextError<CR>
 nmap <C-O> :vsc View.NavigateBackward<CR>
 nmap <C-I> :vsc View.NavigateForward<CR>
+
+nnoremap gcc :vsc Edit.ToggleComment<CR>
+vnoremap gc :vsc Edit.ToggleComment<CR><Esc><Esc>
